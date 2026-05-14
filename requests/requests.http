@@ -4,7 +4,10 @@ GET http://localhost:8080/hello
 GET http://localhost:8080/firstVerse
 ###
 
-POST http://localhost:8080/uppercase
+POST http://localhost:8080/upperCase
 Content-Type: text/plain
 
 to uppercase
+###
+
+GET http://localhost:8080/firstVerse-upperCase
