@@ -9,5 +9,4 @@ Content-Type: text/plain
 
 to uppercase
 ###
-
-GET http://localhost:8080/firstVerse-upperCase
+GET http://localhost:8080/
