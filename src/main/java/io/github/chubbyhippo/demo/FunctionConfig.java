@@ -12,10 +12,10 @@ public class FunctionConfig {
     private static final Logger log = LoggerFactory.getLogger(FunctionConfig.class);
 
     @Bean
-    public Supplier<String> helloWorld() {
+    public Supplier<String> hello() {
         return () -> {
-            log.info("Hello, World!");
-            return "Hello, World!";
+            log.info("hello, function!");
+            return "hello, function!";
         };
     }
 }
