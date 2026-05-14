@@ -23,16 +23,21 @@ public class FunctionConfig {
 
     @Bean
     public Supplier<String> firstVerse() {
-        return () ->
-                """
-                        Genesis 1:1
-                        In the beginning God created the heaven and the earth.
-                        """;
+        return () -> {
+            log.info("Genesis 1:1");
+            return """
+                Genesis 1:1
+                In the beginning God created the heaven and the earth.
+                """;
+        };
     }
 
     @Bean
     public Function<String, String> upperCase() {
-        return value -> value == null ? null : value.toUpperCase();
+        return value -> {
+            log.info("Uppercasing {}", value);
+            return value == null ? null : value.toUpperCase();
+        };
     }
 
     @Bean
