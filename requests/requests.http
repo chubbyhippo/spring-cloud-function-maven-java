@@ -9,4 +9,10 @@ Content-Type: text/plain
 
 to uppercase
 ###
+
+POST http://localhost:8080/logMessage
+Content-Type: text/plain
+
+message
+###
 GET http://localhost:8080/
