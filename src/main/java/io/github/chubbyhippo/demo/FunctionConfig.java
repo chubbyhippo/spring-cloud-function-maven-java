@@ -30,7 +30,7 @@ public class FunctionConfig {
     }
 
     @Bean
-    public Function<String, String> uppercase() {
+    public Function<String, String> upperCase() {
         return value -> value == null ? null : value.toUpperCase();
     }
 }
